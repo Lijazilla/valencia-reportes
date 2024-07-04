@@ -2,7 +2,7 @@
   "name": "document-pdf",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://lijazilla.github.io/document-pdf/build",
+  "homepage": "https://lijazilla.github.io/valencia-reportes/build",
   "predeploy": "npm run build",
   "deploy": "gh-pages -b main -d builds",
   "dependencies": {
