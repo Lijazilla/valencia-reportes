@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/document-pdf/build/static/css/main.2536379b.css",
+    "main.js": "/document-pdf/build/static/js/main.d7ad5f2c.js",
+    "index.html": "/document-pdf/build/index.html",
+    "main.2536379b.css.map": "/document-pdf/build/static/css/main.2536379b.css.map",
+    "main.d7ad5f2c.js.map": "/document-pdf/build/static/js/main.d7ad5f2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2536379b.css",
+    "static/js/main.d7ad5f2c.js"
+  ]
+}

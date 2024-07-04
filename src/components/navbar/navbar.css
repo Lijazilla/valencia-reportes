@@ -1,0 +1,196 @@
+:root {
+    --white: #EEEEEE;
+    --plate: #e9e9e9;
+    --red: #D72323;
+    --gray-blue: #fefefe;
+    --dark-grey: #3A4750;
+    --black-grey: #303841;
+    --black: #000;
+    --blue-green: #1A4645;
+    --orange: #F58800;
+    --sm: 14px;
+    --md: 16px;
+    --lg: 18px;
+    --tl: 24px;
+}
+.inactive {
+    display: none;
+}
+.navbar{
+    left: 0;
+    top: 0;
+    overflow: hidden;
+    position: absolute;
+}
+.navbar button {
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+.navbar button:hover{
+    background-color: var(--red);
+    color: var(--white)
+}
+.menu-selectors{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.navbar {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid;
+    background: var(--gray-blue);
+    overflow: visible;
+    z-index: 1;
+}
+.first-menu {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    z-index: 1;
+    margin: 0;
+    padding: 0;
+}
+.br-for-mobile{
+    display: none;
+}
+.instructions{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 60%;
+    height: 100%;
+    left: 1%;
+}
+.text-instructions{
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.images-selector {
+    background-color: var(--blue-green);
+    color: var(--white);
+    border-radius: 10px;
+    width: 75px;
+    height: 25px;
+    margin: 0;
+    justify-content: center;
+}
+.confirm-preferences {
+    border: 0;
+    background-color: var(--blue);
+    color: var(--white);
+    border-radius: 10px;
+    height: 25px;
+    box-sizing: border-box;
+}
+.agregar-pagina{
+    background-color: var(--blue-green);
+    color: var(--white);
+    border-radius: 10px;
+    height: 25px;
+    width: 115px;
+    margin-top: 4px;
+}
+.clear-button {
+    background-color: var(--blue-green);
+    color: var(--white);
+    border-radius: 10px;
+    height: 25px;
+    width: 85px;
+    margin-top: 4px;
+}
+
+/* Mobile */
+@media screen and (max-width: 720px) {
+    .navbar{
+        background-color: var(--dark-grey);
+        left: 0;
+        top: 0;
+    }
+    .first-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .menu-selectors{
+        align-items: center;
+        width: 40%;
+        justify-content: space-around;
+    }
+    .instructions{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        width: 60%;
+        height: 100%;
+        margin-top: 2%;
+        left: 1%;
+    }
+    .text-instructions{
+        color: white;
+        font-size: 11px;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+    }
+    .orientation{
+        border: 0;
+        background-color: var(--white);
+        border-radius: 10px;
+        height: 20px;
+        width: 66px;
+        padding: 0;
+        margin: 0;
+        font-size: .6em;
+        color: var(--gray);
+        font-weight: bold;
+        font-family: 'Lucida Sans';
+    }
+    .images-selector {
+        background-color: var(--white);
+        color: var(--gray);
+        border-radius: 10px;
+        width: 66px;
+        height: 25px;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        font-size: 0.6em;
+        border: 0;
+        font-weight: bold;
+        font-family: 'Lucida Sans';
+    }
+    .confirm-preferences {
+        border: 0;
+        background-color: var(--white);
+        color: var(--gray);
+        border-radius: 10px;
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 25px;
+        width: 66px;
+        box-sizing: border-box;
+        font-size: .6em;
+        font-weight: bold;
+        font-family: 'Lucida Sans';
+        margin-bottom: 7%;
+    }
+}
